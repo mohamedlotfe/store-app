@@ -1,5 +1,8 @@
 package com.codewithmo.storeapp;
 
+import org.springframework.stereotype.Service;
+
+@Service("stripe")
 public class StripPaymentService implements PaymentService {
 
     @Override

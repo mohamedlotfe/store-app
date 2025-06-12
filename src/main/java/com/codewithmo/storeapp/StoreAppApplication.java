@@ -13,7 +13,7 @@ public class StoreAppApplication {
         var orderService = context.getBean(OrderService.class);
 
         // var orderService = new OrderService();
-        orderService.setPaymentService(new PayPalPaymentService());
+        //orderService.setPaymentService(new PayPalPaymentService());
         orderService.placeOrder();
 
     }
