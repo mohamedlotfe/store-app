@@ -1,8 +1,9 @@
 spring:
   application:
     name: store-app
-stripe:
-  apiUrl: https://api.stripe.com
-  timeout: 1000
-  enabled: true
-  supported-currencies: USD,EUR,GBP
+  datasource:
+    url: jdbc:mysql://localhost:3306/store?createDatabaseIfNotExist=true
+    username: root
+    password: root12345
+  jpa:
+    show-sql: true
